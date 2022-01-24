@@ -181,10 +181,10 @@ button{
 
 
 .postagem img{
-    width: 100%;
-    height: 612px;
-    margin-bottom: 14px;
-}
+        width: 100%;
+        margin-bottom: 14px;
+        object-fit: cover;
+    }
 
 .post .icones{
     display: flex;
@@ -301,13 +301,20 @@ footer p{
 
 
 
+/*tela "media"*/
 @media (max-width: 934px){
     body{
         overflow-x: hidden;
     }
+
+    #stories{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     #container{
-        width: 73%;
+        width: 80vw;
     }
 
     #container-2{
@@ -316,11 +323,13 @@ footer p{
 
     #container-1{
         margin-top: 88px;
+        width: 80vw;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto;  
     }
 }
 
+/*nao-mobile*/
 @media (min-width: 613px){
     #barra-topo-mobile{
         display: none;
@@ -331,7 +340,9 @@ footer p{
     }
 }
 
-@media (max-width: 612px){
+
+/*mobile*/
+@media (max-width: 613px){
     #barra-topo{
         display: none;
     }
@@ -362,6 +373,7 @@ footer p{
     }
 
     #container-1{
+        width: 100vw;
         margin-top: 4vh;
     }
 
